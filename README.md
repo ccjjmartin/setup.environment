@@ -31,7 +31,7 @@ Pre Install Configuration
 - Setup SSH Key on GitHub
 - Setup SSH Key on Pantheon
 - Setup SSH Key on Acquia
-- Run pre-install.sh to setup home_directory files
+- Run scripts/pre-install.sh to setup home_directory files
 
 Turn on FileVault
 --------------------
