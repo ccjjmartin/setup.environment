@@ -155,10 +155,10 @@ Setup phpcs
 - `composer global require drupal/coder`
 - `phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer`
 
-JS linting
-----------
-- eslint (http://eslint.org/docs/user-guide/getting-started)
-- `npm install -g eslint`
+JS linting with eslint
+----------------------
+- `npm install -g eslint eslint-plugin-import eslint-config-airbnb-base`
+
 
 RVM
 ====
