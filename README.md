@@ -63,7 +63,7 @@ Setup homebrew
 Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md](https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Installation.md)
 
 ### Install homebrew:
-- `sudo chown developer:wheel /usr/local`
+- `sudo chown -R $(whoami):admin /usr/local`
 - `cd /usr/local`
 - `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew`
 - `export PATH=$PATH:/usr/local/homebrew/bin`
