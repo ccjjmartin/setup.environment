@@ -4,7 +4,7 @@ Setup environment
 Introduction
 ------------
 
-Environement setup is something that if you don't do right the first time around
+Environment setup is something that if you don't do right the first time around
 it will come back to haunt you because you will spend a lot of time fighting
 with your tools instead of your tools helping you.  Also, installing tools with
 `sudo` can result in you having to use that tool with `sudo` for every command.
@@ -48,7 +48,7 @@ Setup Time Machine
 - If you have an external drive, network drive, or Apple server hosting time
 machine.  Go ahead and set this up now.
 - Optionally, if you wait for FileVault and Time Machine to complete you will
-have a fresh install avaliabe at this point to restore to if needed.
+have a fresh install available at this point to restore to if needed.
 
 Carbon Copy Clone
 -----------------
