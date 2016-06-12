@@ -206,6 +206,16 @@ install to restore to.
 Author's Picks
 ==============
 
+Hyperkey
+--------
+- http://brettterpstra.com/2013/01/26/a-guided-tour-of-my-hyper-key-shortcuts/
+
+Slate window manager
+--------------------
+- https://github.com/jigish/slate
+- NOTE: This project is no longer maintained.  As such I am looking for a
+suitable replacement that offers this much flexibility.
+
 Install Menu Meters
 -------------------
 - http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/
