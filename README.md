@@ -241,16 +241,12 @@ Atom Packages
 
 Atom Settings
 -------------
-- By default atom comes with the mardown-preview package which is great for
-viewing markdown files but if you use GitHub you can edit your settings file to
-show the preview styled as "Use GitHub.com style"
-- By default atom comes with an autocomplete-plus package.  Autocomplete is fine
-but confirming a suggestion with the enter key is not.  I turned this off by
-opening Settings > Packages > autocomplete-plus > Keymap For Confirming a
-Suggestion > to "tab" only.
-- In the linter-phpcs settings add "Drupal" to the Code Standards or Config File
-- NOTE: The linter only runs when you save the file.
-- In the linter-eslint settings
+- To change the settings below open menu item Atom > Preferences > Packages
+- mardown-preview > "Use GitHub.com style" > checked
+- autocomplete-plus > Keymap For Confirming a Suggestion > "tab" only.
+- bracket-matcher > autocomplete smart quotes > unchecked
+- linter-phpcs > Code Standards or Config File > "Drupal"
+- NOTE: The linter does not run on file open, start typing or save the file.
 
 Atom Command Line
 -----------------
