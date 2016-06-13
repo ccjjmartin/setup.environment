@@ -17,6 +17,37 @@ User setup
 complete you can optionally remove administrator access
 - Do any icloud, email, calendar, or contacts setup as necessary
 
+OS Setup
+--------
+- Check for system updates Apple Icon > Software Update
+
+System Preferences (El Capitan)
+-------------------------------
+- Sharing > Computer Name > Type your desired name
+- Trackpad > Point and Click > Tap to click
+- Trackpad > Point and Click > Silent clicking > On
+- Keyboard > Key Repeat > Fast
+- Keyboard > Delay Until Repeat > Short
+- Keyboard > Modifier Keys ... > Caps Lock Key > No action (used as hyperkey)
+- Accessibility > Mouse and Trackpad > Trackpad Options ... > Enable Dragging >
+three finger drag
+- Mouse > Tracking speed > Fast
+- Mouse > Scrolling speed > Moderate
+- Energy Saver > Power Adapter > Turn off display after 1 hour
+- Energy Saver > Power Adapter > Prevent computer from sleeping automatically
+- Mission Control > Mission Control > Second Drop Down > Middle Mouse Button
+- Mission Control > Group Windows By Application > On
+
+Turn on FileVault
+--------------------
+- Open system preferences
+- Go to security
+- Go to FileVault
+- Turn it on
+- Enable boot login accounts
+- Restart your computer
+- Continue the install process while this runs in the background
+
 Manual Download Applications
 ----------------------------
 - Slack (App store)
@@ -33,16 +64,6 @@ Pre Install Configuration
 - Setup SSH Key on Pantheon
 - Setup SSH Key on Acquia
 - Run scripts/pre-install.sh to setup home_directory files
-
-Turn on FileVault
---------------------
-- Open system preferences
-- Go to security
-- Go to FileVault
-- Turn it on
-- Enable boot login accounts
-- Restart your computer
-- Continue the install process while this runs in the background
 
 Setup Time Machine
 ------------------
