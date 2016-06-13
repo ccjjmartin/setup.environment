@@ -50,11 +50,17 @@ Turn on FileVault
 
 Manual Download Applications
 ----------------------------
+- **REQUIRED** - Xcode (App store) - Xcode ships will complier tools needed for
+tools like homebrew to install successfully.
+- Google Chrome (https://www.google.com/intl/en/chrome/browser/)
+- Firefox (https://www.mozilla.org/en-US/firefox/new/)
+- Color picker (App store) - The free one
 - Slack (App store)
 - Komodo Edit (http://komodoide.com/download/edit-osx/#)
 - Atom (https://atom.io/)
 - Sublime (@todo)
-- Install SourceTree (https://www.sourcetreeapp.com/download/)
+- Install SourceTree (https://www.sourcetreeapp.com/download/) - Register a new
+account.  It's free.
 
 Pre Install Configuration
 -------------------------
