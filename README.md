@@ -21,6 +21,7 @@ Manual Download Applications
 ----------------------------
 - Slack (App store)
 - Komodo Edit (http://komodoide.com/download/edit-osx/#)
+- Atom (https://atom.io/)
 - Sublime (@todo)
 - Install SourceTree (https://www.sourcetreeapp.com/download/)
 - iTerm (https://iterm2.com/downloads/stable/iTerm2-2_1_4.zip)
@@ -159,6 +160,49 @@ JS linting with eslint
 ----------------------
 - `npm install -g eslint eslint-plugin-import eslint-config-airbnb-base`
 
+Code Editing
+============
+
+Atom
+----
+- Good for reviewing file history with git-time-machine
+- Good for GitHub.com markdown previewing
+- Good for code linting
+
+Atom Packages
+-------------
+- For any of the packages below you can type `apm install {package_name}`:
+- autocomplete-php (add autocomplete php support)
+- git-time-machine (History of a particular file)
+- linter (a tool for code linting)
+- linter-phpcs (a PHP language specific linter)
+- linter-eslint (a JS language specific linter)
+- minimap (preview of your file's entire source code)
+- minimap-linter (a preview of code linting)
+- term3 (command line shell within Atom)
+
+Atom Settings
+-------------
+- By default atom comes with the mardown-preview package which is great for
+viewing markdown files but if you use GitHub you can edit your settings file to
+show the preview styled as "Use GitHub.com style"
+- By default atom comes with an autocomplete-plus package.  Autocomplete is fine
+but confirming a suggestion with the enter key is not.  I turned this off by
+opening Settings > Packages > autocomplete-plus > Keymap For Confirming a
+Suggestion > to "tab" only.
+- In the linter-phpcs settings add "Drupal" to the Code Standards or Config File
+- NOTE: The linter only runs when you save the file.
+- In the linter-eslint settings
+
+Atom Command Line
+-----------------
+- On my install it looks like the atom command was possible out of the box
+although it is possible that one of the packages above created the command:
+- `atom`
+- `atom .` will open the current directory in atom.
+- You can check your `/usr/local/bin` directory for a symlink called atom
+- If it isn't there run:
+- `ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom`
 
 RVM
 ====
