@@ -335,10 +335,6 @@ Postman
 -------
 - Download chrome app
 
-Markdown Viewing
-----------------
-- `brew cask install macdown`
-
 Other
 ----------------------------
 - Drag your /Applications/Utilities folder to the dock (on the side near the
