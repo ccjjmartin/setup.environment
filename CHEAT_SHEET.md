@@ -23,7 +23,7 @@ Cheat Sheet Keystrokes
 Atom
 ----
 - cmd-shift-: # Brings up spellcheck
-- 
+
 Other Cheat Sheets
 ==================
 - GitHub markdown: (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
