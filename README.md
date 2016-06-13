@@ -349,3 +349,30 @@ Other
 ----------------------------
 - Drag your /Applications/Utilities folder to the dock (on the side near the
 trash)
+
+Thanks to ...
+=============
+
+My Family
+---------
+- Fred Martin (My Father - https://github.com/frmartin)
+- Irma Martin (My Mother - https://github.com/irmamartin)
+
+My Mentors
+----------
+- Brandon Williams (https://github.com/rocketeerbkw)
+- Rob Ristroph (https://www.drupal.org/u/rgristroph)
+
+Four Kitchens
+-------------
+- Mike Minecki (https://github.com/mminecki)
+- David Diers (https://github.com/thebruce)
+- Dustin Younse (https://github.com/milsyobtaf)
+- Jon Peck (https://github.com/fluxsauce)
+- Patrick Coffey (https://github.com/patrickocoffeyo)
+- Matt Grill (https://github.com/mattgrill)
+- Taylor Smith (https://github.com/tsmith512)
+
+The Internet
+------------
+- Nicolas Hery (https://github.com/nicolashery/mac-dev-setup)
