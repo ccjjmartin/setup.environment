@@ -17,6 +17,23 @@ Atom
 ----
 - `apm install {package_name}`
 
+RVM, Ruby, and Gems
+-------------------
+- `rvm list`
+- `rvm use system`
+- `rvm use {version}` # Example version: 2.0.0
+- `which ruby`
+- `ruby --version`
+- `rvm install {version}` # Example version: 2.0.0
+- `which gem`
+- `gem update --system`
+- `gem install {gemname}`
+- `gem install {gemname} --no-document` # Faster than regular install
+- `gem list`
+- `gem outdated`
+- `gem update {gemname}`
+- `gem cleanup`
+
 Cheat Sheet Keystrokes
 ======================
 
