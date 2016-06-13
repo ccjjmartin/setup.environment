@@ -55,7 +55,6 @@ Manual Download Applications
 - Atom (https://atom.io/)
 - Sublime (@todo)
 - Install SourceTree (https://www.sourcetreeapp.com/download/)
-- iTerm (https://iterm2.com/downloads/stable/iTerm2-2_1_4.zip)
 
 Pre Install Configuration
 -------------------------
@@ -110,6 +109,44 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `brew cask install virtualbox`
 - `brew cask install vagrant`
 - `brew install ansible`
+
+### Optional - Consolas font:
+- `brew install cabextract`
+- `cd ~/Downloads`
+- `mkdir consolas`
+- `cd consolas`
+- `curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe`
+- `cabextract PowerPointViewer.exe`
+- `cabextract ppviewer.cab`
+- `open CONSOLA*.TTF`
+
+iTerm2
+------
+- Download iTerm2 (https://iterm2.com/downloads/stable/iTerm2-2_1_4.zip)
+- Move the unarchived app to your Applications/Utilities directory
+- Open the app
+- Open preferences
+- Uncheck confirm "closing multiple sessions"
+- Uncheck confirm "Quit iTerm2 (Cmd+Q)"
+- Change fonts to Consolas 14pt font
+
+Nano
+----
+- Take 5 minutes to learn the nano text editor and save yourself the hassle of
+learning vim
+
+VIM
+---
+- Learn how to get out of vim use the following:
+- `:q`
+
+Solarized Color Scheme
+----------------------
+- Download the theme: http://ethanschoonover.com/solarized/files/solarized.zip
+- In iTerm2 Preferences, under Profiles and Colors, go to Load Presets... >
+Import..., find and open the two .itermcolors files we downloaded.
+- Go back to Load Presets... and select Solarized Dark to activate it.
+- Additional info here: http://ethanschoonover.com/solarized
 
 Installing drush
 ----------------

@@ -40,6 +40,9 @@ Cheat Sheet Keystrokes
 Atom
 ----
 - cmd-shift-: # Brings up spellcheck
+VIM
+---
+- `:q` # Exit vim
 
 Other Cheat Sheets
 ==================
