@@ -3,10 +3,13 @@ Cheat Sheet Commands
 
 Homebrew
 --------
-- brew install ...
-- brew rm ...
-- brew update
-- brew upgrade ...
+- `brew install {package_name}`
+- `brew rm {package_name}`
+- `brew update`
+- `brew outdated`
+- `brew upgrade {package_name}`
+- `brew cleanup`
+- `brew list --versions`
 
 Composer
 --------
@@ -16,6 +19,10 @@ Composer
 Atom
 ----
 - `apm install {package_name}`
+
+Node
+----
+- `node --version` #
 
 RVM, Ruby, and Gems
 -------------------
@@ -39,7 +46,8 @@ Cheat Sheet Keystrokes
 
 Atom
 ----
-- cmd-shift-: # Brings up spellcheck
+- `cmd-shift-:` # Brings up spellcheck
+
 VIM
 ---
 - `:q` # Exit vim

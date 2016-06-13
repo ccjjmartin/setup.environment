@@ -3,7 +3,6 @@ Setup environment
 
 Introduction
 ------------
-
 Environment setup is something that if you don't do right the first time around
 it will come back to haunt you because you will spend a lot of time fighting
 with your tools instead of your tools helping you.  Also, installing tools with
@@ -97,7 +96,7 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 
 ### Install git:
 - `brew update`
-- `brew install git` (git)
+- `brew install git`
 
 ### Install php:
 - `brew tap homebrew/dupes`
@@ -181,8 +180,8 @@ Installing drush
 Setup Git
 ---------
 This is how your commits will be stored.
-- git config --global user.email "name@example.com"
-- git config --global user.name "Firstname Lastname"
+- `git config --global user.email "name@example.com"`
+- `git config --global user.name "Firstname Lastname"`
 
 File Structure
 --------------
@@ -291,6 +290,11 @@ NVM
 - `npm install gulp -g`
 - `npm install grunt -g`
 
+SASS and LESS
+=============
+- SASS and LESS are intentionally left out here as they should be setup properly
+within your projects and not installed globally.
+
 SQL
 ====
 
@@ -339,7 +343,7 @@ computer.
 
 Postman
 -------
-- Download chrome app
+- Download for mac version
 
 Other
 ----------------------------
