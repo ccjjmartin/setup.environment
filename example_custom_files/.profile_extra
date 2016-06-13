@@ -1,0 +1,2 @@
+# GitHub API Key for many access calls
+export HOMEBREW_GITHUB_API_TOKEN=""
