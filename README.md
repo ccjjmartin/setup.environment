@@ -47,10 +47,17 @@ Turn on FileVault
 - Restart your computer
 - Continue the install process while this runs in the background
 
+Xcode
+-----
+- You have two options for installing xcode.  The full package or just the 
+command line tools but at a minimum the command line tools are required.
+- Install just the xcode command line tools with:
+- `xcode-select --install` -or-
+- Go to the app store and download the full package.  The full package is
+great for if you do any sort of mobile development.
+
 Manual Download Applications
 ----------------------------
-- **REQUIRED** - Xcode (App store) - Xcode ships will complier tools needed for
-tools like homebrew to install successfully.
 - Google Chrome (https://www.google.com/intl/en/chrome/browser/)
 - Firefox (https://www.mozilla.org/en-US/firefox/new/)
 - Color picker (App store) - The free one
