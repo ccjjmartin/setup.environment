@@ -30,11 +30,11 @@ The key is created in relation to each *individual* login to a computer, so will
 
 #####  Enter this command: ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
 * When prompted for a location to place the file, just press Enter.
-![Enter Command](../../../../images/github/github-create-ssh-key_4.JPG)
+![Enter Command](../../images/github/github-create-ssh-key_4.JPG)
 > Because this SSH Key can be used for **all** of your Git repositories (and Remote Hosts), it does not matter what directory your are in when the command is executed.
 
 ##### When prompted, enter a passphrase, for security.
-![Enter Passphrase](../../../../images/github/github-create-ssh-key_5.JPG)
+![Enter Passphrase](../../images/github/github-create-ssh-key_5.JPG)
 
 > **Warning** - You *can* hit enter here to have **no** passphrase on your SSH Keys. This is not a Best Practice because anyone who retrieves a copy of your SSH Key (such as an Administrator or another User with Administrative privileges) has unlimited access to any of your repositories.
 
@@ -48,15 +48,15 @@ This useful package locally stores *your* SSH information so that you do not hav
 **Only on Git for Windows**
 * Enter this command: ``` ssh-agent -s ```
 
-![Activate the SSH Agent](../../../../images/github/github-add-ssh-agent_2.JPG)
+![Activate the SSH Agent](../../images/github/github-add-ssh-agent_2.JPG)
 > **Note** - On Git Bash, the SSH-Agent is already activated, but you can check your PID using the following command:
 
  ```
  $eval "$(ssh-agent -s)"
  ```
- ![Evaluate the SSH Agent](../../../../images/github/github-add-ssh-agent_1.JPG)
+ ![Evaluate the SSH Agent](../../images/github/github-add-ssh-agent_1.JPG)
 
 ##### Add SSH Key to ```ssh-agent```
 * Enter this command: ```ssh-add ~/.ssh/id_rsa```
 
-![Add the SSH Key to the SSH Agent](../../../../appendix/github/github-add-ssh-agent_3.JPG)
+![Add the SSH Key to the SSH Agent](../../appendix/github/github-add-ssh-agent_3.JPG)
