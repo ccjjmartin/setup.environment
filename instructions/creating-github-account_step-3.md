@@ -1,6 +1,6 @@
 # Creating a GitHub Account
 
-![Octocat](../../images/github/Octocat.png)
+![Octocat](../../../images/github/Octocat.png)
 
 
 ## Step 3 - Add the SSH Key to GitHub
