@@ -1,6 +1,6 @@
 # Creating a GitHub Account
 
-![GitHub Mark](../../images/github/GitHub-Mark-64px.png)
+![GitHub Mark](../images/github/GitHub-Mark-64px.png)
 
 ## Step 2 - Create an SSH Key
 
@@ -26,7 +26,7 @@ The key is created in relation to each *individual* login to a computer, so will
 
 #### Generate the SSH Key
 ##### Open Git Bash
-![Open Git Bash](../../images/github/github-create-ssh-key_3.JPG)
+![Open Git Bash](../images/github/github-create-ssh-key_3.JPG)
 
 #####  Enter this command: ```ssh-keygen -t rsa -b 4096 -C "your_email@example.com"```
 * When prompted for a location to place the file, just press Enter.
