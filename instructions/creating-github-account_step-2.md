@@ -59,4 +59,4 @@ This useful package locally stores *your* SSH information so that you do not hav
 ##### Add SSH Key to ```ssh-agent```
 * Enter this command: ```ssh-add ~/.ssh/id_rsa```
 
-![Add the SSH Key to the SSH Agent](../appendix/github/github-add-ssh-agent_3.JPG)
+![Add the SSH Key to the SSH Agent](../images/github/github-add-ssh-agent_3.JPG)
