@@ -1,0 +1,14 @@
+Change Log
+==========
+All notable changes to this project will be documented in this file.
+This project adheres to Semantic Versioning (http://semver.org/).
+
+[Unreleased]
+------------
+- Place changes here
+
+0.1.0, 2016-06-15
+-----------------
+- Initial release
+- Matches talk given at ADUG on June 15, 2016 found at:
+https://www.youtube.com/watch?v=72K8K9dNirY
