@@ -250,6 +250,7 @@ Atom Packages
 - minimap-linter (a preview of code linting)
 - term3 (command line shell within Atom)
 - atom-beautify (automatically fix code mistakes for you)
+- multi-wrap-guide (add multiple wrap guides at different column widths)
 
 Atom Settings
 -------------
@@ -262,6 +263,8 @@ Atom Settings
 - atom-beautify > CoffeeScript > Indent Size > 2
 - atom-beautify > PHP > Default Beautifier > "PHPCBF"
 - atom-beautify > PHP > PHPCBF Standard > "Drupal"
+- multi-wrap-guide > Vertical Guide Wrap Positions > "80, 92"
+- multi-wrap-guide > Lock Guides > checked
 
 Atom Command Line
 -----------------
