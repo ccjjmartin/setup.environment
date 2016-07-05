@@ -249,6 +249,7 @@ Atom Packages
 - minimap (preview of your file's entire source code)
 - minimap-linter (a preview of code linting)
 - term3 (command line shell within Atom)
+- atom-beautify (automatically fix code mistakes for you)
 
 Atom Settings
 -------------
@@ -258,6 +259,8 @@ Atom Settings
 - bracket-matcher > autocomplete smart quotes > unchecked
 - linter-phpcs > Code Standards or Config File > "Drupal"
 - NOTE: The linter does not run on file open, start typing or save the file.
+- atom-beautify > PHP > Default Beautifier > "PHPCBF"
+- atom-beautify > PHP > PHPCBF Standard > "Drupal"
 
 Atom Command Line
 -----------------
