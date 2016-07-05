@@ -259,6 +259,7 @@ Atom Settings
 - bracket-matcher > autocomplete smart quotes > unchecked
 - linter-phpcs > Code Standards or Config File > "Drupal"
 - NOTE: The linter does not run on file open, start typing or save the file.
+- atom-beautify > CoffeeScript > Indent Size > 2
 - atom-beautify > PHP > Default Beautifier > "PHPCBF"
 - atom-beautify > PHP > PHPCBF Standard > "Drupal"
 
