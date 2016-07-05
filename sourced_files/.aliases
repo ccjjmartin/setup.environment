@@ -29,3 +29,4 @@ alias drush8='~/drush8/vendor/bin/drush'
 
 # OSX
 alias addspacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';killall Dock;"
+alias fasttimemachine='sudo sysctl debug.lowpri_throttle_enabled=0'
