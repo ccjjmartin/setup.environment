@@ -49,7 +49,7 @@ Turn on FileVault
 
 Xcode
 -----
-- You have two options for installing xcode.  The full package or just the 
+- You have two options for installing xcode.  The full package or just the
 command line tools but at a minimum the command line tools are required.
 - Install just the xcode command line tools with:
 - `xcode-select --install` -or-
