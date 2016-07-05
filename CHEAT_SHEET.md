@@ -55,3 +55,6 @@ VIM
 Other Cheat Sheets
 ==================
 - GitHub markdown: (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+- Regex:
+(https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
