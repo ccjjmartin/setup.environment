@@ -30,3 +30,17 @@ alias drush8='~/drush8/vendor/bin/drush'
 # OSX
 alias addspacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';killall Dock;"
 alias fasttimemachine='sudo sysctl debug.lowpri_throttle_enabled=0'
+
+# Jekyll
+alias spinup="bundle exec jekyll serve"
+
+# Remote Servers
+alias gzipit="gzip -c"
+alias ungzipit="gzip -dc"
+alias compress="tar -czvf" # tar -czvf archive.tar.gz /usr/local/something
+alias extract="tar -xzvf" # tar -xzvf archive.tar.gz -C /usr/local/something
+
+# Remote Server Status
+alias dir-size="du -sh" # du -sh dir_name
+alias disk-space="df -h ."
+
