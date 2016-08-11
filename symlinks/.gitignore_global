@@ -26,3 +26,7 @@ dashboard/index.html
 
 # Ansible
 playbook.retry
+
+# PHPStorm
+.idea
+
