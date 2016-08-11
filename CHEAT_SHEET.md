@@ -52,6 +52,14 @@ VIM
 ---
 - `:q` # Exit vim
 
+SERVER STATUS
+-------------
+- https://support.rackspace.com/how-to/checking-system-load-on-linux/
+- `uptime` # Check the load on the server
+- `grep processor /proc/cpuinfo | wc -l` # List the number of processors
+- `top` # Displays real time information regarding server usage
+- `vmstat` # Shows swap usage in KB
+
 Other Cheat Sheets
 ==================
 - GitHub markdown: (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
