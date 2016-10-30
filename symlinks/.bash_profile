@@ -3,3 +3,5 @@ for file in ~/repos/setup.environment/sourced_files/.{paths,bash_prompt,exports,
   [ -r "$file" ] && source "$file"
 done
 unset file
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
