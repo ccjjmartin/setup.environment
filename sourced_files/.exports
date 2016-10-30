@@ -5,3 +5,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 # This loads nvm
 export NVM_DIR="/Users/developer/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Vagrant plugins
+export VAGRANT_PLUGINS=''
+export VAGRANT_LOG='warn'
