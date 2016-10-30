@@ -30,6 +30,8 @@ alias drush8='~/drush8/vendor/bin/drush'
 # OSX
 alias addspacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';killall Dock;"
 alias fasttimemachine='sudo sysctl debug.lowpri_throttle_enabled=0'
+alias showhidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
+alias hidehidden='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
 
 # Jekyll
 alias spinup="bundle exec jekyll serve"
@@ -44,3 +46,5 @@ alias extract="tar -xzvf" # tar -xzvf archive.tar.gz -C /usr/local/something
 alias dir-size="du -sh" # du -sh dir_name
 alias disk-space="df -h ."
 
+# VPNs
+alias routes="netstat -nr"
