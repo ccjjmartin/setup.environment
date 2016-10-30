@@ -1,6 +1,6 @@
 # Creating a GitHub Account
 
-![Octocat](../images/github/Octocat.png)
+![Octocat](../../images/github/Octocat.png)
 
 
 ## Step 3 - Add the SSH Key to GitHub
@@ -11,19 +11,19 @@
 
 #### Navigate to [GitHub.com](https://github.com) and Login
 
-![Login](../images/github/github-create-account_1.JPG)
+![Login](../../images/github/github-create-account_1.JPG)
 
 ##### Open User Settings
 
-![Open User Settings](../images/github/github-create-ssh-key_1.JPG)
+![Open User Settings](../../images/github/github-create-ssh-key_1.JPG)
 
 ##### Navigate to ```SSH and GPG Keys``` Link
 
-![Navigate to ```SSH and GPG Keys``` Link](../images/github/github-create-ssh-key_2.JPG)
+![Navigate to ```SSH and GPG Keys``` Link](../../images/github/github-create-ssh-key_2.JPG)
 
 #### Click *New SSH Key*
 
-![Click *New SSH Key*](../images/github/github-create-ssh-key_6.JPG)
+![Click *New SSH Key*](../../images/github/github-create-ssh-key_6.JPG)
 
 #### Enter SSH Key
 
@@ -32,7 +32,7 @@ your GitHub account with.
 
 - Example:  `username-my-laptop` or `username@my-laptop`
 
-![Click *Add SSH Key*](../images/github/github-create-ssh-key_7.JPG)
+![Click *Add SSH Key*](../../images/github/github-create-ssh-key_7.JPG)
 
 ##### Get *Public* SSH Key for GitHub
 
@@ -54,8 +54,8 @@ Linux or Mac (type this then copy and paste into the browser):
 cat ~/.ssh/id_rsa.pub
 ```
 
-![Click *Add SSH Key*](../images/github/github-create-ssh-key_8.JPG)
+![Click *Add SSH Key*](../../images/github/github-create-ssh-key_8.JPG)
 
 If successful, you will see a screen similar to this:
 
-![Click *Add SSH Key*](../images/github/github-create-ssh-key_9.JPG)
+![Click *Add SSH Key*](../../images/github/github-create-ssh-key_9.JPG)
