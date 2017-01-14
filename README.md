@@ -111,6 +111,8 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `brew install PHP56 --with-pear`
 
 ### Install composer:
+- Project: https://github.com/composer/composer
+- Docs: https://getcomposer.org/doc/
 - `brew install composer`
 
 ### Install hub:
