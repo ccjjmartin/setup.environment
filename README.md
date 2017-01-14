@@ -211,11 +211,6 @@ directory.
 Hosts
 =====
 
-Setup terminus for Pantheon
----------------------------
-- `composer require pantheon-systems/terminus`
-- Log in and setup machine tokens
-
 Code Linting
 ============
 
@@ -314,7 +309,22 @@ SQL
 Setup SequelPro
 ---------------
 - Get your favorites from ~/Library/Application\ Support/SequelPro/Data/Favories.xml
-- @TODO Verify Above Path and add download link
+- https://github.com/sequelpro/sequelpro/releases 
+
+Pantheon
+========
+
+Terminus
+--------
+ - Via  curl: `curl -O https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar && php installer.phar`
+ - Via **Composer**: cd /install/location ; composer require pantheon-systems/terminus
+
+I recommend installing via Composer, as managing versions of Terminus is controlled via `composer update` instead of manually uninstalling and reinstalling
+
+Pancakes
+--------
+- `composer create-project --stability=beta -d ~/.terminus/plugins/ terminus-plugin-project/terminus-pancakes-plugin:~1`
+- Paired with SequelPro, Terminus Pancakes allows you to load your Pantheon database near-instantly *from* Pantheon via simple CLI commands such as `terminus site:pancakes`
 
 
 Post Install Process
