@@ -113,6 +113,11 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 ### Install composer:
 - `brew install composer`
 
+### Install hub:
+- Project: https://github.com/github/hub
+- Docs: https://hub.github.com/hub.1.html
+- `brew install hub`
+
 ### Install yarn:
 - Project: https://github.com/yarnpkg/yarn/
 - Docs: https://yarnpkg.com/en/docs/cli/
