@@ -11,3 +11,4 @@ export PATH=$HOME/drush7/vendor/bin:$PATH                   # Drush
 export PATH=$HOME/.composer/vendor/bin:$PATH                # Composer
 export PATH=$HOME/vendor/bin:$PATH                          # Composer
 export PATH=$HOME/.rvm/bin:$PATH                            # RVM
+export PATH=$PATH:`yarn global bin`                         # Yarn
