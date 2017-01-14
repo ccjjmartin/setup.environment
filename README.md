@@ -113,6 +113,11 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 ### Install composer:
 - `brew install composer`
 
+### Install yarn:
+- Project: https://github.com/yarnpkg/yarn/
+- Docs: https://yarnpkg.com/en/docs/cli/
+- `brew install yarn`
+
 ### Install zsh:
 - `brew install zsh` (this should be last to prevent weird errors)
 
