@@ -54,3 +54,6 @@ alias doc="docker-compose"
 
 # Amazee.io
 alias docssh="docker-compose exec --user drupal drupal bash"
+
+# Cpp Compile:
+alias cppcompile='c++ -std=c++11 -stdlib=libc++'
