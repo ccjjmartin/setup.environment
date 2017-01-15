@@ -73,7 +73,7 @@ Pre Install Configuration
 - Setup SSH Key on GitHub
 - Setup SSH Key on Pantheon
 - Setup SSH Key on Acquia
-- Run scripts/pre-install.sh to setup home_directory files
+- Run scripts/setup-symlinks.sh to setup home_directory files
 
 Setup Time Machine
 ------------------
