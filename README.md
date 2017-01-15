@@ -208,9 +208,6 @@ DrupalVM
 directory.
 - For new machines copy the example.config.yml to config.yml and configure.
 
-Hosts
-=====
-
 Code Linting
 ============
 
