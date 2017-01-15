@@ -1,5 +1,5 @@
 {
     "require": {
-        "pantheon-systems/terminus": "^0.11.1"
+        "pantheon-systems/terminus": "^0.13.4"
     }
 }

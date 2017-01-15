@@ -111,7 +111,19 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `brew install PHP56 --with-pear`
 
 ### Install composer:
+- Project: https://github.com/composer/composer
+- Docs: https://getcomposer.org/doc/
 - `brew install composer`
+
+### Install hub:
+- Project: https://github.com/github/hub
+- Docs: https://hub.github.com/hub.1.html
+- `brew install hub`
+
+### Install yarn:
+- Project: https://github.com/yarnpkg/yarn/
+- Docs: https://yarnpkg.com/en/docs/cli/
+- `brew install yarn`
 
 ### Install zsh:
 - `brew install zsh` (this should be last to prevent weird errors)

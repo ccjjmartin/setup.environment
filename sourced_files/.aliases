@@ -48,3 +48,9 @@ alias disk-space="df -h ."
 
 # VPNs
 alias routes="netstat -nr"
+
+# Docker
+alias doc="docker-compose"
+
+# Amazee.io
+alias docssh="docker-compose exec --user drupal drupal bash"

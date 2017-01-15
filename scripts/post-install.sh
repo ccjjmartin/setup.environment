@@ -13,3 +13,6 @@ ln -s ~/repos/setup.environment/symlinks/.eslintrc ~/.eslintrc
 ln -s ~/repos/setup.environment/symlinks/.gitignore_global ~/.gitignore_global
 ln -s ~/repos/setup.environment/symlinks/.profile ~/.profile
 ln -s ~/repos/setup.environment/symlinks/composer.json ~/composer.json
+
+# Symbolic links for commands
+ln -s /Applications/SourceTree.app/Contents/Resources/stree ~/bin/
