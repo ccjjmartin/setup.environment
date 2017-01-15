@@ -127,7 +127,7 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 
 ### Install zsh:
 - Base zsh package:
-- `brew install zsh` (this should be last to prevent weird errors)
+- `brew install zsh zsh-completions` (this should be last to prevent weird errors)
 - Oh My Zsh:
 - `curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`
 - Optional (Change default shell to zsh):
