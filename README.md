@@ -256,6 +256,12 @@ Atom Packages
 - atom-beautify (automatically fix code mistakes for you)
 - multi-wrap-guide (add multiple wrap guides at different column widths)
 
+(If using React.js)
+- js-hyperclick 
+- language-JSX
+- language-babel
+- react-snippets
+
 Atom Settings
 -------------
 - To change the settings below open menu item Atom > Preferences > Packages
