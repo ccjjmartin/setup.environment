@@ -256,6 +256,13 @@ Atom Packages
 - atom-beautify (automatically fix code mistakes for you)
 - multi-wrap-guide (add multiple wrap guides at different column widths)
 
+(If using React.js)
+- js-hyperclick (lets you jump to where variables are defined)
+- language-JSX (Adds syntax highlighting and snippets to JSX file in Atom)
+- language-babel (Language grammar for all versions of JavaScript including ES2016 and ESNext, JSX syntax)
+- language-graphql (Atom syntax highlighting for GraphQL, ported from language-babel.)
+- react-snippets (An Atom snippet library for React)
+
 Atom Settings
 -------------
 - To change the settings below open menu item Atom > Preferences > Packages
