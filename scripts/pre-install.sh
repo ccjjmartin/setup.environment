@@ -1,3 +1,6 @@
+# Setup files on existing computer
+mkdir ~/repos/setup.environment/SAVE_ME_DONT_DELETE
+
 # Create symbolic links in your home directory
 ln -s ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.gitconfig ~/.gitconfig
 ln -s ~/repos/setup.environment/symlinks/.bash_profile ~/.bash_profile
