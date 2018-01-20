@@ -367,9 +367,8 @@ Node
 
 NVM
 ----
-- `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash`
-- `npm install gulp -g`
-- `npm install grunt -g`
+- Go to this page for the latest install command:
+https://github.com/creationix/nvm#install-script
 
 SASS and LESS
 =============
