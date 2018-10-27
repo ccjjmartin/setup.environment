@@ -11,3 +11,6 @@ export VAGRANT_PLUGINS=''
 export VAGRANT_LOG='warn'
 export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 export DRUSH_NO_MIN_PHP=1
+
+# Git Signing with GPG
+export GPG_TTY=$(tty)
