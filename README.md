@@ -104,6 +104,11 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `brew tap homebrew/versions`
 - `brew tap homebrew/php`
 - `brew install PHP56 --with-pear`
+- `brew install php56-gmp`
+- `brew install php56-mcrypt`
+
+### Edit php.ini:
+- If necessary edit your /usr/local/etc/php/5.6/php.ini file for the date.timezone
 
 ### Install composer:
 - Project: https://github.com/composer/composer
