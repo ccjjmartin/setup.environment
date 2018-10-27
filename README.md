@@ -129,7 +129,7 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - Docs: https://yarnpkg.com/en/docs/cli/
 - `brew install yarn`
 
-### Install zsh:
+### Optional - Install zsh:
 - Base zsh package:
 - `brew install zsh zsh-completions` (this should be last to prevent weird errors)
 - Oh My Zsh:
