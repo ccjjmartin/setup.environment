@@ -252,6 +252,13 @@ JS linting with eslint
 ----------------------
 - `npm install -g eslint eslint-plugin-import eslint-config-airbnb-base`
 
+SASS Linting
+------------
+- Globally:
+- `npm install stylelint stylelint-config-standard -g`
+- Or per project:
+- `npm install stylelint-config-standard --save-dev`
+
 Code Editing
 ============
 
