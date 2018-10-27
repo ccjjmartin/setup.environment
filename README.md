@@ -282,11 +282,18 @@ Atom Packages
 - linter (a tool for code linting)
 - linter-phpcs (a PHP language specific linter)
 - linter-eslint (a JS language specific linter)
+- linter-stylelint (a CSS language specific linter)
 - minimap (preview of your file's entire source code)
 - minimap-linter (a preview of code linting)
 - term3 (command line shell within Atom)
 - atom-beautify (automatically fix code mistakes for you)
 - multi-wrap-guide (add multiple wrap guides at different column widths)
+- react (JSX plugin)
+- atom-phpunit (PHPUnit Testing)
+- php-debug (XDebug)
+- git-blame (Shows who made the last commit line by line in a file)
+- goto-definition (Shows source code definition)
+- teletype (Allows collaboration of writing code)
 
 Atom Settings
 -------------
@@ -295,6 +302,8 @@ Atom Settings
 - autocomplete-plus > Keymap For Confirming a Suggestion > "tab" only.
 - bracket-matcher > autocomplete smart quotes > unchecked
 - linter-phpcs > Code Standards or Config File > "Drupal"
+- linter-stylelint > Uncheck "Disable when no config file is found"
+- linter-stylelint > Check "Use standard"
 - NOTE: The linter does not run on file open, start typing or save the file.
 - atom-beautify > CoffeeScript > Indent Size > 2
 - atom-beautify > PHP > Default Beautifier > "PHPCBF"
