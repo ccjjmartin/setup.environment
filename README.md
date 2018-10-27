@@ -213,6 +213,14 @@ Installing drush
 [https://github.com/drush-ops/drush](https://github.com/drush-ops/drush)
 [https://www.lullabot.com/articles/switching-drush-versions](https://www.lullabot.com/articles/switching-drush-versions)
 
+### Install drush 9.x:
+> **NOTE** - As of Drupal 8.4 `drush` only functions as a dependancy module within individual Drupal projects. Similarly, `drush/drush:8.*` only has limited functionality and support. 
+- Install [Drush Launcher](https://github.com/drush-ops/drush-launcher)
+  - This ensures the `drush` command is available globally, not just within individual Drupal docroots.
+  - The Drush Launcher uses the `drush` command, by default, globally.
+- `cd ~/some-drupal-docroot`
+- `composer require "drush/drush:9.*"`
+
 ### Install drush 8.x:
 - `mkdir ~/drush8`
 - `cd ~/drush8`
@@ -255,14 +263,6 @@ DrupalVM
 - For existing machines get the exiting config.yml and drop it into the new
 directory.
 - For new machines copy the example.config.yml to config.yml and configure.
-
-Hosts
-=====
-
-Setup terminus for Pantheon
----------------------------
-- `composer require pantheon-systems/terminus`
-- Log in and setup machine tokens
 
 Code Linting
 ============
@@ -314,6 +314,13 @@ Atom Packages
 - goto-definition (Shows source code definition)
 - teletype (Allows collaboration of writing code)
 
+(If using React.js)
+- js-hyperclick (lets you jump to where variables are defined)
+- language-JSX (Adds syntax highlighting and snippets to JSX file in Atom)
+- language-babel (Language grammar for all versions of JavaScript including ES2016 and ESNext, JSX syntax)
+- language-graphql (Atom syntax highlighting for GraphQL, ported from language-babel.)
+- react-snippets (An Atom snippet library for React)
+
 Atom Settings
 -------------
 - To change the settings below open menu item Atom > Preferences > Packages
@@ -340,6 +347,55 @@ although it is possible that one of the packages above created the command:
 - If it isn't there run:
 - `ln -s /Applications/Atom.app/Contents/Resources/app/atom.sh /usr/local/bin/atom`
 
+Visual Studio Code
+----
+- Fast
+- Good for code linting
+- Git integrations
+
+VS Code Packages
+-------------
+
+Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the View: Extensions command (⇧⌘X).
+ 
+First enabled terminal `code` command by opening the Command Palette (⇧⌘P) and typing 'shell command'. Click on `Shell Command: Install 'code' in path` command.
+ 
+Then, for any package, you can type `code --install-extension {package_name}`
+
+- dzannotti.vscode-babel-coloring (Adds JS Babel es6/es7 syntax coloring)
+- PeterJausovec.vscode-docker (Adds syntax highlighting, etc. for Dockerfile and docker-compose files.)
+- dssiqueira.drupal-8-snippets (Drupal 8 Snippets)
+- marcostazi.vs-code-drupal (Drupal 7/8 Syntax Highlighting)
+- pauloamgomes.drupal7-hooks-snippets (Drupal 7 Hook Snippets)
+- juniormucciolo.drupal-7-snippets (More Drupla 7 Hook Snippets)
+- dbaeumer.vscode-eslint (ESLint)
+    - Will need to install eslint to use ( `npm install -g eslint` )
+- flowtype.flow-for-vscode (Flow Language Support)
+- Orta.vscode-jest (Facebook's JEST Snippets. JavaScript Testing)
+- donjayamanne.python (Bunch of Python Goodies)
+- timothymclane.react-redux-es6-snippets (React / Redux ES6 Snippets)
+- eg2.tslint (TypeScript Linting)
+    - Will need to install tslint to use ( 'npm install -g tslint' )
+- igorming.useful-react-snippets (Useful React Snippets)
+
+
+VS Code Settings
+-------------
+The settings are configured via 'Settings' and are maintained via JSON.
+To override, just click on the pencil icon next to the code-to-be-overwritten and select 'Replace in settings'. This adds a line to the custom settings JSON on the right.
+
+**Example**
+```
+{
+    "workbench.colorTheme": "Solarized Dark",
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.wordWrap": "on",
+    "html.format.wrapLineLength": 80,
+    "editor.tabSize": 2
+}
+```
+
 RVM
 ====
 
@@ -363,9 +419,8 @@ Node
 
 NVM
 ----
-- `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash`
-- `npm install gulp -g`
-- `npm install grunt -g`
+- Go to this page for the latest install command:
+https://github.com/creationix/nvm#install-script
 
 SASS and LESS
 =============
@@ -382,7 +437,29 @@ SQL
 Setup SequelPro
 ---------------
 - Get your favorites from ~/Library/Application\ Support/SequelPro/Data/Favories.xml
-- @TODO Verify Above Path and add download link
+- https://github.com/sequelpro/sequelpro/releases
+
+Pantheon
+========
+
+Terminus
+--------
+ - Via  curl: `curl -O https://raw.githubusercontent.com/pantheon-systems/terminus-installer/master/builds/installer.phar && php installer.phar`
+ - Via **Composer**: cd /install/location ; composer require pantheon-systems/terminus
+ - Via **cgr**:
+ ```bash
+ $ composer global require consolidation/cgr
+ $ cgr pantheon-systems/terminus
+ $ echo 'export PATH=~/.composer/vendor/bin:$PATH' >> ~/.bashrc (or other shell resource file such as ~/.zshrc)
+ $ source ~/.bashrc (or other shell resource file such as ~/.zshrc)
+ ```
+
+I recommend installing via Composer, as managing versions of Terminus is controlled via `composer update` instead of manually uninstalling and reinstalling.  You can also update via `cgr update` as well.
+
+Pancakes
+--------
+- `composer create-project --stability=beta -d ~/.terminus/plugins/ terminus-plugin-project/terminus-pancakes-plugin:~1`
+- Paired with SequelPro, Terminus Pancakes allows you to load your Pantheon database near-instantly *from* Pantheon via simple CLI commands such as `terminus site:pancakes`
 
 
 Post Install Process
