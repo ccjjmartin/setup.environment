@@ -327,6 +327,10 @@ SASS and LESS
 - SASS and LESS are intentionally left out here as they should be setup properly
 within your projects and not installed globally.
 
+CIRCLECI
+========
+- curl -o /usr/local/bin/circleci https://circle-downloads.s3.amazonaws.com/releases/build_agent_wrapper/circleci && chmod +x /usr/local/bin/circleci
+
 SQL
 ====
 
