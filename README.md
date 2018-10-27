@@ -193,6 +193,20 @@ Import..., find and open the two .itermcolors files we downloaded.
 - Go back to Load Presets... and select Solarized Dark to activate it.
 - Additional info here: http://ethanschoonover.com/solarized
 
+Setting up this repository
+--------------------------
+- `mkdir ~/repos`
+- `cd ~/repos`
+- `git clone git@github.com:ccjjmartin/setup.environment.git`
+- NOTE: If you see "Permission Denied (publickey)" this means that you need to
+setup your publickey on GitHub or use the https version of the url.
+- `mkdir ~/repos/setup.environment/SAVE_ME_DONT_DELETE/`
+- `touch ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.gitconfig`
+- `git config --global core.editor "nano"`
+- `git config --global user.name "John Doe"`
+- `git config --global user.email johndoe@email.com`
+- Run scripts/setup-symlinks.sh to setup home_directory files
+
 Installing drush
 ----------------
 [http://docs.drush.org/en/master/install/](http://docs.drush.org/en/master/install/)
