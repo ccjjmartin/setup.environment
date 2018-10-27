@@ -5,3 +5,6 @@ done
 unset file
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+
+[ -f /usr/local/homebrew/etc/bash_completion ] && . /usr/local/homebrew/etc/bash_completion
+source "$HOME/.console/console.rc" 2>/dev/null
