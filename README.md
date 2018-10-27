@@ -73,7 +73,6 @@ Pre Install Configuration
 - Setup SSH Key on GitHub
 - Setup SSH Key on Pantheon
 - Setup SSH Key on Acquia
-- Run scripts/setup-symlinks.sh to setup home_directory files
 
 Setup Time Machine
 ------------------
@@ -99,10 +98,6 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `cd /usr/local`
 - `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew`
 - `export PATH=$PATH:/usr/local/homebrew/bin`
-
-### Install git:
-- `brew update`
-- `brew install git`
 
 ### Install php:
 - `brew tap homebrew/dupes`
