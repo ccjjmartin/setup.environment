@@ -8,3 +8,5 @@ unset file
 
 [ -f /usr/local/homebrew/etc/bash_completion ] && . /usr/local/homebrew/etc/bash_completion
 source "$HOME/.console/console.rc" 2>/dev/null
+
+export PATH="$PATH:/Applications/DevDesktop/tools"
