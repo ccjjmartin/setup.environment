@@ -115,6 +115,11 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - Docs: https://hub.github.com/hub.1.html
 - `brew install hub`
 
+### Install gpg (code signing):
+- Docs: https://help.github.com/articles/generating-a-new-gpg-key/#generating-a-gpg-key
+- Exception to above docs was to use homebrew for gpg install.
+- `brew install gpg`
+
 ### Install yarn:
 - Project: https://github.com/yarnpkg/yarn/
 - Docs: https://yarnpkg.com/en/docs/cli/
