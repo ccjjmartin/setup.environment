@@ -139,6 +139,12 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - To use zsh if it isn't your default shell type:
 - `zsh`
 
+### Optional - Install bash-completions:
+- Install package:
+- `brew install bash-completion`
+- Add to sourced_files:
+- `[ -f /usr/local/homebrew/etc/bash_completion ] && . /usr/local/homebrew/etc/bash_completion`
+
 ### Install DrupalVM related tools:
 - `brew cask install virtualbox`
 - `brew cask install vagrant`
