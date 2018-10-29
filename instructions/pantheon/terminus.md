@@ -8,9 +8,9 @@ Terminus
  - Via **cgr**:
  ```bash
  $ composer global require consolidation/cgr
- $ cgr pantheon-systems/terminus
  $ echo 'export PATH=~/.composer/vendor/bin:$PATH' >> ~/.bashrc (or other shell resource file such as ~/.zshrc)
  $ source ~/.bashrc (or other shell resource file such as ~/.zshrc)
+ $ cgr pantheon-systems/terminus
  ```
 
 I recommend installing via Composer, as managing versions of Terminus is controlled via `composer update` instead of manually uninstalling and reinstalling.  You can also update via `cgr update` as well.
