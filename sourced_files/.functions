@@ -1,1 +1,45 @@
 
+# FileSearch
+# function f() { find . -iname "*$1*" ${@:2} }
+# function r() { grep "$1" ${@:2} -R . }
+
+# mkdir and cd
+# function mkcd() { mkdir -p "$@" && cd "$_"; }
+
+# Ports
+port() {
+  sudo lsof -i :"$1";
+}
+
+# Amazee.io
+function ddrush() {
+  args=""
+  while [ "$1" != "" ]; do
+    args="${args} '$1'" && shift
+  done;
+
+  docker-compose exec --user drupal drupal bash -c "source ~/.bash_envvars && cd /var/www/drupal/public_html/\"\$WEBROOT\" && PATH=`pwd`/../vendor/bin:$PATH && drush ${args}"
+}
+
+# Database:
+function rmcache() {
+  cat < "$1" | sed '/INSERT INTO `cache.*` VALUES/d' > "$1.small"
+}
+
+function rmwatchdog() {
+  cat < "$1" | sed '/INSERT INTO `watchdog.*` VALUES/d' > "$1.small"
+}
+
+function rmsessions() {
+  cat < "$1" | sed '/INSERT INTO `sessions.*` VALUES/d' > "$1.small"
+}
+
+function rmdb() {
+  cat < "$1" | sed -E '/INSERT INTO `[cache|watchdog|sessions].*` VALUES/d' > "$1.small"
+}
+
+function gitonly() {
+  echo "What status would you like to search for (A,M,D,R)?"
+  read letter
+  git status -s | awk '{if ($1 == "'$letter'") print $2}'
+}

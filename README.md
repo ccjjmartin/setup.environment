@@ -73,7 +73,6 @@ Pre Install Configuration
 - Setup SSH Key on GitHub
 - Setup SSH Key on Pantheon
 - Setup SSH Key on Acquia
-- Run scripts/pre-install.sh to setup home_directory files
 
 Setup Time Machine
 ------------------
@@ -100,33 +99,56 @@ Installation.md: [https://github.com/Homebrew/brew/blob/master/share/doc/homebre
 - `mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew`
 - `export PATH=$PATH:/usr/local/homebrew/bin`
 
-### Install git:
-- `brew update`
-- `brew install git`
-
 ### Install php:
 - `brew tap homebrew/dupes`
 - `brew tap homebrew/versions`
 - `brew tap homebrew/php`
 - `brew install PHP56 --with-pear`
+- `brew install php56-gmp`
+- `brew install php56-mcrypt`
+
+### Edit php.ini:
+- If necessary edit your /usr/local/etc/php/5.6/php.ini file for the date.timezone
 
 ### Install composer:
 - Project: https://github.com/composer/composer
 - Docs: https://getcomposer.org/doc/
-- `brew install composer`
+- Download:
+- `php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+- `php -r "if (hash_file('SHA384', 'composer-setup.php') === '55d6ead61b29c7bdee5cccfb50076874187bd9f21f65d8991d46ec5cc90518f447387fb9f76ebae1fbbacf329e583e30') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"`
+- `php composer-setup.php`
+- `php -r "unlink('composer-setup.php');"`
 
 ### Install hub:
 - Project: https://github.com/github/hub
 - Docs: https://hub.github.com/hub.1.html
 - `brew install hub`
 
+### Install gpg (code signing):
+- Docs: https://help.github.com/articles/generating-a-new-gpg-key/#generating-a-gpg-key
+- Exception to above docs was to use homebrew for gpg install.
+- `brew install gpg`
+
 ### Install yarn:
 - Project: https://github.com/yarnpkg/yarn/
 - Docs: https://yarnpkg.com/en/docs/cli/
 - `brew install yarn`
 
-### Install zsh:
-- `brew install zsh` (this should be last to prevent weird errors)
+### Optional - Install zsh:
+- Base zsh package:
+- `brew install zsh zsh-completions` (this should be last to prevent weird errors)
+- Oh My Zsh:
+- `curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh`
+- Optional (Change default shell to zsh):
+- `chsh -s /usr/local/bin/zsh`
+- To use zsh if it isn't your default shell type:
+- `zsh`
+
+### Optional - Install bash-completions:
+- Install package:
+- `brew install bash-completion`
+- Add to sourced_files:
+- `[ -f /usr/local/homebrew/etc/bash_completion ] && . /usr/local/homebrew/etc/bash_completion`
 
 ### Install DrupalVM related tools:
 - `brew cask install virtualbox`
@@ -170,6 +192,20 @@ Solarized Color Scheme
 Import..., find and open the two .itermcolors files we downloaded.
 - Go back to Load Presets... and select Solarized Dark to activate it.
 - Additional info here: http://ethanschoonover.com/solarized
+
+Setting up this repository
+--------------------------
+- `mkdir ~/repos`
+- `cd ~/repos`
+- `git clone git@github.com:ccjjmartin/setup.environment.git`
+- NOTE: If you see "Permission Denied (publickey)" this means that you need to
+setup your publickey on GitHub or use the https version of the url.
+- `mkdir ~/repos/setup.environment/SAVE_ME_DONT_DELETE/`
+- `touch ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.gitconfig`
+- `git config --global core.editor "nano"`
+- `git config --global user.name "John Doe"`
+- `git config --global user.email johndoe@email.com`
+- Run scripts/setup-symlinks.sh to setup home_directory files
 
 Installing drush
 ----------------
@@ -241,6 +277,13 @@ JS linting with eslint
 ----------------------
 - `npm install -g eslint eslint-plugin-import eslint-config-airbnb-base`
 
+SASS Linting
+------------
+- Globally:
+- `npm install stylelint stylelint-config-standard -g`
+- Or per project:
+- `npm install stylelint-config-standard --save-dev`
+
 Code Editing
 ============
 
@@ -258,11 +301,18 @@ Atom Packages
 - linter (a tool for code linting)
 - linter-phpcs (a PHP language specific linter)
 - linter-eslint (a JS language specific linter)
+- linter-stylelint (a CSS language specific linter)
 - minimap (preview of your file's entire source code)
 - minimap-linter (a preview of code linting)
 - term3 (command line shell within Atom)
 - atom-beautify (automatically fix code mistakes for you)
 - multi-wrap-guide (add multiple wrap guides at different column widths)
+- react (JSX plugin)
+- atom-phpunit (PHPUnit Testing)
+- php-debug (XDebug)
+- git-blame (Shows who made the last commit line by line in a file)
+- goto-definition (Shows source code definition)
+- teletype (Allows collaboration of writing code)
 
 (If using React.js)
 - js-hyperclick (lets you jump to where variables are defined)
@@ -278,6 +328,8 @@ Atom Settings
 - autocomplete-plus > Keymap For Confirming a Suggestion > "tab" only.
 - bracket-matcher > autocomplete smart quotes > unchecked
 - linter-phpcs > Code Standards or Config File > "Drupal"
+- linter-stylelint > Uncheck "Disable when no config file is found"
+- linter-stylelint > Check "Use standard"
 - NOTE: The linter does not run on file open, start typing or save the file.
 - atom-beautify > CoffeeScript > Indent Size > 2
 - atom-beautify > PHP > Default Beautifier > "PHPCBF"
@@ -374,6 +426,10 @@ SASS and LESS
 =============
 - SASS and LESS are intentionally left out here as they should be setup properly
 within your projects and not installed globally.
+
+CIRCLECI
+========
+- curl -o /usr/local/bin/circleci https://circle-downloads.s3.amazonaws.com/releases/build_agent_wrapper/circleci && chmod +x /usr/local/bin/circleci
 
 SQL
 ====
@@ -484,3 +540,4 @@ Four Kitchens
 The Internet
 ------------
 - Nicolas Hery (https://github.com/nicolashery/mac-dev-setup)
+- (http://sourabhbajaj.com/mac-setup/index.html)

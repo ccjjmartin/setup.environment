@@ -18,7 +18,7 @@ alias lsd='ls -l | grep "^d"'
 alias lS='ls -lS'
 
 # Always use color output for `ls`
-alias ls="command ls ${colorflag}"
+# alias ls="command ls -al ${colorflag}"
 export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.avi=01;35:*.fli=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.ogg=01;35:*.mp3=01;35:*.wav=01;35:'
 
 # Drupal
@@ -26,12 +26,18 @@ alias lint='phpcs --standard="Drupal"'
 alias fixcode='phpcbf --standard="Drupal"'
 alias drush7='~/drush7/vendor/bin/drush'
 alias drush8='~/drush8/vendor/bin/drush'
+alias drush9='~/drush9/vendor/bin/drush'
+alias ddd='/Applications/DevDesktop/tools/drush' # Dev Desktop Drush
+alias ddalias='cp ~/.acquia/DevDesktop/Drush/Aliases/aliases.drushrc.php ~/.drush/devdesktop.aliases.drushrc.php'
+alias fixphpcs='phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer'
+alias drupal='php ~/bin/drupal.phar'
 
 # OSX
 alias addspacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';killall Dock;"
 alias fasttimemachine='sudo sysctl debug.lowpri_throttle_enabled=0'
 alias showhidden='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder'
 alias hidehidden='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder'
+alias systeminfo='system_profiler SPSoftwareDataType'
 
 # Jekyll
 alias spinup="bundle exec jekyll serve"
@@ -46,11 +52,33 @@ alias extract="tar -xzvf" # tar -xzvf archive.tar.gz -C /usr/local/something
 alias dir-size="du -sh" # du -sh dir_name
 alias disk-space="df -h ."
 
-# VPNs
+# Networking
 alias routes="netstat -nr"
+alias listening="netstat -tulpn"
+alias whatismyip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Docker
 alias doc="docker-compose"
+alias doc-up="docker-compose up -d --build --remove-orphans"
+alias doc-up-force="docker-compose up -d --build --remove-orphans --force-recreate"
+alias ddrush="docker-compose exec -T web drush"
+alias ddrupal="docker-compose exec -T web drupal"
+alias doce="docker-compose exec -T web"
+alias kdrush="kbox drush"
 
 # Amazee.io
 alias docssh="docker-compose exec --user drupal drupal bash"
+
+# Cpp Compile:
+alias cppcompile='c++ -std=c++11 -stdlib=libc++'
+
+# Git:
+alias cleanup-origin="git checkout master; git branch -r --merged | grep origin | grep -v 'master\|develop\|release\|sprint\|hotfix\|clean' | sed 's/origin\///' | xargs -n 1 git push --delete origin"
+alias cleanup-github="git checkout master; git branch -r --merged | grep github | grep -v 'master\|develop\|release\|sprint\|hotfix\|clean' | sed 's/github\///' | xargs -n 1 git push --delete github"
+alias cleanup-pantheon="git checkout master; git branch -r --merged | grep pantheon | grep -v 'master\|develop\|sprint\|hotfix\|clean' | sed 's/pantheon\///' | xargs -n 1 git push --delete pantheon"
+alias cleanup-local="git checkout master; git branch --merged | grep -v 'master\|develop\|release\|sprint\|hotfix\|clean' | xargs -n 1 git branch -d"
+alias gd-short="git diff --word-diff -w"
+
+# Servers
+alias phpserver="php -S localhost:8000"
+alias symfonyserver="php bin/console server:run"
