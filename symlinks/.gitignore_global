@@ -30,3 +30,8 @@ playbook.retry
 # PHPStorm
 .idea
 
+# Remote Scripts
+remotes/
+
+# VSCode
+.vscode/

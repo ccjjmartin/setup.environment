@@ -2,12 +2,15 @@
 export CLICOLOR=1
 export HISTTIMEFORMAT="%d/%m/%y %T "
 
-# This loads nvm
-export NVM_DIR="/Users/developer/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Vagrant plugins
 export VAGRANT_PLUGINS=''
 export VAGRANT_LOG='warn'
 export VAGRANT_DEFAULT_PROVIDER='virtualbox'
 export DRUSH_NO_MIN_PHP=1
+
+# Git Signing with GPG
+export GPG_TTY=$(tty)

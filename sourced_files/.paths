@@ -3,7 +3,6 @@ export PATH=/usr/local/bin:$PATH                            # local/bin
 export PATH=/usr/local/sbin:$PATH                           # local/sbin
 export PATH=/usr/local/homebrew/bin:$PATH                   # Homebrew
 export PATH=/usr/local/share/npm/bin:$PATH                  # Node
-export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH" # PHPCS
 
 # PATH $HOME directory exports:
 export PATH=$HOME/bin:$PATH                                 # $HOME/bin
@@ -12,3 +11,5 @@ export PATH=$HOME/.composer/vendor/bin:$PATH                # Composer
 export PATH=$HOME/vendor/bin:$PATH                          # Composer
 export PATH=$HOME/.rvm/bin:$PATH                            # RVM
 export PATH=$PATH:`yarn global bin`                         # Yarn
+# DevDesktop
+export PATH=$PATH:/Applications/DevDesktop/mysql/bin        # Mysql

@@ -1,0 +1,20 @@
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]} m:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=** l:|=*'
+zstyle :compinstall filename '/Users/developer/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=10000
+# End of lines configured by zsh-newuser-install
+
+ZSH_THEME="pygmalion"
+plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew osx zsh-syntax-highlighting)
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+source $ZSH/oh-my-zsh.sh
