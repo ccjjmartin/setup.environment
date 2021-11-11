@@ -23,7 +23,7 @@ git config --global alias.cl 'config --list'
 git config --global alias.co checkout
 git config --global alias.dc 'diff --cached'
 git config --global alias.ds 'diff --staged'
-git config --global alias.graph 'log --graph --oneline --decorate --pretty=format:"%cn %s %cr"'
+git config --global alias.graph 'log --graph --oneline --decorate --pretty=format:"%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset"'
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.rb rebase
 git config --global alias.st status

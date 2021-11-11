@@ -54,7 +54,6 @@ alias disk-space="df -h ."
 
 # Networking
 alias routes="netstat -nr"
-alias listening="netstat -tulpn"
 alias whatismyip="dig +short myip.opendns.com @resolver1.opendns.com"
 
 # Docker
@@ -82,3 +81,17 @@ alias gd-short="git diff --word-diff -w"
 # Servers
 alias phpserver="php -S localhost:8000"
 alias symfonyserver="php bin/console server:run"
+
+# Static sites
+alias static-site="wget -mkEpnp"
+
+# Folding at home
+alias fold="sudo /etc/init.d/FAHClient start"
+alias fold-log="sudo /etc/init.d/FAHClient log"
+alias fold-help="sudo /etc/init.d/FAHClient --help"
+alias fold-status="sudo /etc/init.d/FAHClient status"
+alias fold-config="cat /etc/fahclient/config.xml"
+alias gpustat="gpustat -cpuFP -i"
+
+# CI
+alias circle="curl -u ${CIRCLE_API_USER_TOKEN}: -d 'build_parameters[CIRCLE_JOB]=build' https://circleci.com/api/v1.1/project/github/${OWNER}/${PROJECT}/tree/${BRANCH}"

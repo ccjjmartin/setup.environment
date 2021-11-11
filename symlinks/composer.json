@@ -1,7 +1,13 @@
 {
     "require": {
-      "pantheon-systems/terminus": ">=1.7.1",
-        "drupal/coder": "^8.2",
-        "pantheon-systems/terminus-build-tools-plugin": "~1"
+        "pantheon-systems/terminus": ">=1.7.1",
+        "drupal/coder": "*",
+        "pantheon-systems/terminus-build-tools-plugin": "~1",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "dealerdirect/phpcodesniffer-composer-installer": "*",
+        "roave/security-advisories": "master-dev"
+    },
+    "require-dev": {
+        "mglaman/drupal-check": "^1.1"
     }
 }

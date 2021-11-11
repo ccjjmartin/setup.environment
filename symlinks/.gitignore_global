@@ -35,3 +35,4 @@ remotes/
 
 # VSCode
 .vscode/
+.lando.local.yml

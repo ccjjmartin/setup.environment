@@ -1,3 +1,8 @@
+# NVM first
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 # PATH /usr/local exports:
 export PATH=/usr/local/bin:$PATH                            # local/bin
 export PATH=/usr/local/sbin:$PATH                           # local/sbin
@@ -6,10 +11,17 @@ export PATH=/usr/local/share/npm/bin:$PATH                  # Node
 
 # PATH $HOME directory exports:
 export PATH=$HOME/bin:$PATH                                 # $HOME/bin
+export PATH=$HOME/.local/bin:$PATH                          # Pip installs
 export PATH=$HOME/drush7/vendor/bin:$PATH                   # Drush
 export PATH=$HOME/.composer/vendor/bin:$PATH                # Composer
 export PATH=$HOME/vendor/bin:$PATH                          # Composer
+export PATH="$(composer config -g home)/vendor/bin:$PATH"   # Composer (cgr)
 export PATH=$HOME/.rvm/bin:$PATH                            # RVM
 export PATH=$PATH:`yarn global bin`                         # Yarn
+export PATH=$PATH:/snap/bin                                 # Snap
+
 # DevDesktop
 export PATH=$PATH:/Applications/DevDesktop/mysql/bin        # Mysql
+
+# Other
+export PATH=$PATH:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin # Java

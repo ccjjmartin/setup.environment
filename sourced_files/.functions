@@ -43,3 +43,15 @@ function gitonly() {
   read letter
   git status -s | awk '{if ($1 == "'$letter'") print $2}'
 }
+
+function listening() {
+  sudo netstat -tulpn | grep -w ":$1"
+}
+
+function check-port() {
+  sudo lsof -i ":$1" -P -n
+}
+
+function migrate() {
+  lando drush cr -l default; lando drush cim -y -l default; lando drush mrs $1 -l default; lando drush migrate:rollback $1 -l default; lando drush migrate:import $1  -l default --update;
+}

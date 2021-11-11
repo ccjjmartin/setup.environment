@@ -21,16 +21,14 @@ kinds of development.  See the kinds-of-development section.
 Setting up this repository
 --------------------------
 - This repository is meant to be used as a backup and quick transfer of my local environment setup.  If you wish to use my shell configuration you can follow the steps below.
-- `mkdir ~/repos`
-- `cd ~/repos`
+- `mkdir ~/public`
+- `cd ~/public`
 - `git clone git@github.com:ccjjmartin/setup.environment.git`
 - NOTE: If you see "Permission Denied (publickey)" this means that you need to
 setup your publickey on GitHub or use the https version of the url.
-- `mkdir ~/repos/setup.environment/SAVE_ME_DONT_DELETE/`
-- `touch ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.gitconfig`
-- `git config --global core.editor "nano"`
-- `git config --global user.name "John Doe"`
-- `git config --global user.email johndoe@email.com`
+- `cd setup.environment`
+- `./scripts/git-config.sh`
+- `./scripts/setup-symlinks`
 - Run scripts/setup-symlinks.sh to setup home_directory files
 
 Assumed File Structure
@@ -39,3 +37,11 @@ Assumed File Structure
 - `mkdir ~/lando` (lando repos here)
 - `mkdir ~/patches` (contrib patches here)
 - `mkdir ~/sql` (.sql files here - exclude from backups)
+
+Linux
+-----
+
+PHP will probably be missing xmlrpc:
+- `sudo apt-get install php-xmlrpc php-mbstring`
+- `sudo phpenmod xmlrpc mbstring`
+- `phpcs --config-set installed_paths /home/fourkitchens/vendor/drupal/coder/coder_sniffer`

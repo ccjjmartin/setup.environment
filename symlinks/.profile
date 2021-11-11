@@ -1,10 +1,10 @@
 # Load the shell dotfiles, and then some:
-for file in ~/repos/setup.environment/sourced_files/.{paths,bashrc,bash_prompt,exports,aliases,functions}; do
+for file in ~/public/setup.environment/sourced\_files/.{paths,bashrc,bash_prompt,exports,aliases,functions}; do
   [ -r "$file" ] && source "$file"
 done
 unset file
 
-source ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.extra
+source ~/public/setup.environment/SAVE_ME_DONT_DELETE/.extra
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -16,3 +16,6 @@ source ~/repos/setup.environment/SAVE_ME_DONT_DELETE/.extra
 source "$HOME/.console/console.rc" 2>/dev/null
 
 export PATH="$PATH:/Applications/DevDesktop/tools"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
