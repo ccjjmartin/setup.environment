@@ -31,3 +31,4 @@ git config --global alias.unstage 'reset HEAD --'
 git config --global color.ui true
 git config --global help.autocorrect 1
 git config --global push.default matching
+git config pull.rebase false

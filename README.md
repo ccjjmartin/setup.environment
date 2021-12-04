@@ -21,8 +21,8 @@ kinds of development.  See the kinds-of-development section.
 Setting up this repository
 --------------------------
 - This repository is meant to be used as a backup and quick transfer of my local environment setup.  If you wish to use my shell configuration you can follow the steps below.
-- `mkdir ~/public`
-- `cd ~/public`
+- `mkdir ~/Public`
+- `cd ~/Public`
 - `git clone git@github.com:ccjjmartin/setup.environment.git`
 - NOTE: If you see "Permission Denied (publickey)" this means that you need to
 setup your publickey on GitHub or use the https version of the url.
@@ -44,4 +44,4 @@ Linux
 PHP will probably be missing xmlrpc:
 - `sudo apt-get install php-xmlrpc php-mbstring`
 - `sudo phpenmod xmlrpc mbstring`
-- `phpcs --config-set installed_paths /home/fourkitchens/vendor/drupal/coder/coder_sniffer`
+- `phpcs --config-set installed_paths /home/{user}/vendor/drupal/coder/coder_sniffer`
